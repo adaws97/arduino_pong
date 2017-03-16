@@ -62,7 +62,7 @@ void loop() {
 }
 
 void process_inputs() {
-    startButtonState = PORTD | B00001000;
+    startButtonState = PIND | B00001000;
     if (startButtonState == HIGH) { //Is button pressed
       if (!playing) {
         playing = true;
